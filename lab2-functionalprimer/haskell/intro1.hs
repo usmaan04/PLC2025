@@ -3,17 +3,24 @@ module Intro1 where
 -- define named constants:
 r1 = 1
 r2 = b^2 + 1/b where b = 2
+module Intro1 where
 
--- define a function:
+-- Define named constants:
+r1 = 1
+r2 = b^2 + 1 / b where b = 2
+
+-- Define a function:
+diff :: Num a => a -> a -> a
 diff a b = abs (a - b)
 
-r3 = diff (diff a a) a  where a = 1
-r4 = diff (diff a b) b  where a = 1; b = 1
+r3 = let a = 1 in diff (diff a a) a
+r4 = let a = 1; b = 1 in diff (diff a b) b
 
--- lists by enumeration
+-- Lists by enumeration:
 r5 = [1,3,4,1]
 r6 = [1..5]
 
+inc :: Num a => a -> a
 inc n = n + 1
 
 r7 = map inc [1..3]
