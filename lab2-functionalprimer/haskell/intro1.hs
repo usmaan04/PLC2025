@@ -1,10 +1,5 @@
 module Intro1 where
 
--- define named constants:
-r1 = 1
-r2 = b^2 + 1/b where b = 2
-module Intro1 where
-
 -- Define named constants:
 r1 = 1
 r2 = b^2 + 1 / b where b = 2
